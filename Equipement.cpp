@@ -1,28 +1,16 @@
 #include "Equipement.h"
 
-std::string Equipement::getReference() const {
-    return reference;
-}
+std::string Equipement::getReference() const { return reference; }
 
-std::string Equipement::getLibelle() const {
-    return libelle;
-}
+std::string Equipement::getLibelle() const { return libelle; }
 
-std::string Equipement::getDateAchat() const {
-    return dateAchat;
-}
+std::string Equipement::getDateAchat() const { return dateAchat; }
 
-double Equipement::getPrixAchat() const {
-    return prixAchat;
-}
+double Equipement::getPrixAchat() const { return prixAchat; }
 
-bool Equipement::estDisponible() const {
-    return disponible;
-}
+bool Equipement::estDisponible() const { return disponible; }
 
-void Equipement::marquerCommeIndisponible() {
-    disponible = false;
-}
+void Equipement::marquerCommeIndisponible() { disponible = false; }
 
 // Fonction pour afficher le menu
 void afficherMenuEq() {

@@ -4,12 +4,12 @@
 #include <string>
 
 class Sport {
-public:
-    Sport(const std::string &nom);
+  public:
+    Sport(const std::string& nom);
 
     std::string getNom() const;
 
-private:
+  private:
     std::string nom;
 };
 

@@ -1,15 +1,17 @@
 #ifndef EQUIPEMENT_H
 #define EQUIPEMENT_H
 
-#include <iostream>
-#include <vector>
-#include <string>
 #include <algorithm> // Add this line for std::find_if
+#include <iostream>
+#include <string>
+#include <vector>
 
 class Equipement {
-public:
-    Equipement(std::string reference, std::string libelle, std::string dateAchat, double prixAchat)
-        : reference(reference), libelle(libelle), dateAchat(dateAchat), prixAchat(prixAchat), disponible(true) {}
+  public:
+    Equipement(std::string reference, std::string libelle,
+               std::string dateAchat, double prixAchat)
+        : reference(reference), libelle(libelle), dateAchat(dateAchat),
+          prixAchat(prixAchat), disponible(true) {}
 
     std::string getReference() const;
     std::string getLibelle() const;
@@ -18,7 +20,7 @@ public:
     bool estDisponible() const;
     void marquerCommeIndisponible();
 
-private:
+  private:
     std::string reference;
     std::string libelle;
     std::string dateAchat;

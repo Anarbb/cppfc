@@ -1,28 +1,28 @@
 #ifndef SALLEDESPORT_H
 #define SALLEDESPORT_H
 
-#include <vector>
 #include "Adherent.h"
 #include "Entrainement.h"
 #include "Entraineur.h"
 #include "Equipement.h"
 #include "Groupe.h"
+#include <vector>
 
 class SalleDeSport {
-public:
+  public:
     void afficherMenuPrincipal();
 
     void gestionAdherents();
 
-    void ajouterAdherent(const Adherent &adherent);
+    void ajouterAdherent(const Adherent& adherent);
 
     void afficherAdherents() const;
 
-    void rechercherAdherent(const std::string &identifiant) const;
+    void rechercherAdherent(const std::string& identifiant) const;
 
-    void modifierAdherent(const std::string &identifiant);
+    void modifierAdherent(const std::string& identifiant);
 
-    void supprimerAdherent(const std::string &identifiant);
+    void supprimerAdherent(const std::string& identifiant);
 
     void gestionSeancesEntrainement();
 
@@ -32,7 +32,7 @@ public:
 
     void gestionEquipements();
 
-private:
+  private:
     std::vector<Adherent> adherents;
     std::vector<Entrainement> seancesEntrainement;
 };
