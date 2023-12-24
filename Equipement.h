@@ -1,5 +1,6 @@
 #ifndef EQUIPEMENT_H
 #define EQUIPEMENT_H
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -10,29 +11,12 @@ public:
     Equipement(std::string reference, std::string libelle, std::string dateAchat, double prixAchat)
         : reference(reference), libelle(libelle), dateAchat(dateAchat), prixAchat(prixAchat), disponible(true) {}
 
-    std::string getReference() const {
-        return reference;
-    }
-
-    std::string getLibelle() const {
-        return libelle;
-    }
-
-    std::string getDateAchat() const {
-        return dateAchat;
-    }
-
-    double getPrixAchat() const {
-        return prixAchat;
-    }
-
-    bool estDisponible() const {
-        return disponible;
-    }
-
-    void marquerCommeIndisponible() {
-        disponible = false;
-    }
+    std::string getReference() const;
+    std::string getLibelle() const;
+    std::string getDateAchat() const;
+    double getPrixAchat() const;
+    bool estDisponible() const;
+    void marquerCommeIndisponible();
 
 private:
     std::string reference;
@@ -43,11 +27,6 @@ private:
 };
 
 // Fonction pour afficher le menu
-void afficherMenuEq() {
-    std::cout << "Menu :" << std::endl;
-    std::cout << "1. Ajouter un équipement" << std::endl;
-    std::cout << "2. Afficher tous les équipements" << std::endl;
-    std::cout << "3. Marquer un équipement comme indisponible" << std::endl;
-    std::cout << "4. Quitter" << std::endl;
-}
+void afficherMenuEq();
+
 #endif // EQUIPEMENT_H
