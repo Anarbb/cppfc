@@ -4,8 +4,9 @@
 #include <string>
 
 class Adherent {
-public:
-    Adherent(std::string id, std::string n, std::string tel, std::string dateN, std::string dateA);
+  public:
+    Adherent(std::string id, std::string n, std::string tel, std::string dateN,
+             std::string dateA);
 
     Adherent(int id, std::string n);
 
@@ -17,7 +18,7 @@ public:
 
     std::string getNom() const;
 
-private:
+  private:
     std::string identifiant;
     std::string nom;
     std::string telephone;

@@ -16,15 +16,9 @@ void Entraîneur::afficherInformations() const {
     std::cout << std::endl;
 }
 
-int Entraîneur::getNuméro() const {
-    return numéro;
-}
-std::string Entraîneur::getNom() const {
-    return nom;
-}
-bool Entraîneur::estPermanent() const {
-    return !embauche.empty();
-}
+int Entraîneur::getNuméro() const { return numéro; }
+std::string Entraîneur::getNom() const { return nom; }
+bool Entraîneur::estPermanent() const { return !embauche.empty(); }
 
 // Fonction pour afficher le menu
 void afficherMenu() {

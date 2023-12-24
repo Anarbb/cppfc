@@ -1,15 +1,16 @@
 #include "Adherent.h"
 #include <iostream>
 
-Adherent::Adherent(std::string id, std::string n, std::string tel, std::string dateN, std::string dateA)
-    : identifiant(id), nom(n), telephone(tel), dateNaissance(dateN), dateAdhesion(dateA) {}
+Adherent::Adherent(std::string id, std::string n, std::string tel,
+                   std::string dateN, std::string dateA)
+    : identifiant(id), nom(n), telephone(tel), dateNaissance(dateN),
+      dateAdhesion(dateA) {}
 
 Adherent::Adherent(int id, std::string n)
-    : identifiant(std::to_string(id)), nom(n), telephone(""), dateNaissance(""), dateAdhesion("") {}
+    : identifiant(std::to_string(id)), nom(n), telephone(""), dateNaissance(""),
+      dateAdhesion("") {}
 
-std::string Adherent::getIdentifiant() const {
-    return identifiant;
-}
+std::string Adherent::getIdentifiant() const { return identifiant; }
 
 void Adherent::afficherDetails() const {
     std::cout << "Identifiant: " << identifiant << std::endl;
@@ -33,6 +34,4 @@ void Adherent::modifierDetails() {
     std::cin >> dateAdhesion;
 }
 
-std::string Adherent::getNom() const {
-    return nom;
-}
+std::string Adherent::getNom() const { return nom; }
