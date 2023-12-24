@@ -1,16 +1,20 @@
-name: C/C++ CI
+name: C++ Build and Test
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: make
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Build with make
       run: make
