@@ -5,7 +5,7 @@ make
 
 ## Soit compiler en utilisant g++ ou clang++
 ```bash
-c++ -std=c++11 -o main Adherent.cpp Entrainement.cpp Entraineur.cpp Equipement.cpp Groupe.cpp SalleDeSport.cpp SalleEntrainement.cpp Sport.cpp main.cpp
+c++ -std=c++11 -o main main.cpp
 ```
 ## Pour lancer le programme
 ```bash
