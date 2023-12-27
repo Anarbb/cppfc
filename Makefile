@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall
 
-SRCS = Adherent.cpp Entrainement.cpp Entraineur.cpp Equipement.cpp Groupe.cpp main.cpp SalleDeSport.cpp SalleEntrainement.cpp Sport.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXEC = main
 
